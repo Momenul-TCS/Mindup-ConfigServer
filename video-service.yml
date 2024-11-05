@@ -9,6 +9,11 @@ spring:
       host: localhost
       port: 27018
       database: videodb
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 
 
       
