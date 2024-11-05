@@ -44,6 +44,6 @@ management:
       
 info:
   app:
-    name: "video-service-from-git-server"
+    name: "video-service-from-git-server-latest"
     description:  "This is video service"
-    version: "1.0"
+    version: "1.2"
