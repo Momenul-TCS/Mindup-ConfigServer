@@ -13,7 +13,7 @@ spring:
       ddl-auto: update
     show-sql: true
   profiles:
-    active:"dev"
+    active:  dev
  
 #Register as Eureka Client
 eureka:
