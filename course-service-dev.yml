@@ -1,1 +1,50 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: course-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/coursedb
+    username: user
+    password: user123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true    
+ 
+#Register as Eureka Client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka      
+  instance:
+       ip-address: 127.0.0.1
+       preferIpAddress: true
+       hostname: localhost
+      
+#Accuator SetUp
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    shutdown:
+      enabled: true
+    
+  info:
+    env:
+      enabled: true
+      
+      
 
+    
+#Info Setup Under accuator
+info:
+  app:
+    name: "course-service-from-git-server"
+    description: "This is Course Service"
+    version: 1.0
+server:
+  port: 9092
