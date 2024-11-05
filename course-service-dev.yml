@@ -43,7 +43,7 @@ management:
 #Info Setup Under accuator
 info:
   app:
-    name: "course-service-from-git-server"
+    name: "course-service-dev-from-git-server"
     description: "This is Course Service"
     version: 1.0
 server:
