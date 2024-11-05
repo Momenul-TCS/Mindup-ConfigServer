@@ -39,6 +39,6 @@ management:
       
 info:
   app:
-    name: "video-service-from-config-server"
+    name: "video-service-from-git-server"
     description:  "This is video service"
     version: "1.0"
