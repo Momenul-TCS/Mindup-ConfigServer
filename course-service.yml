@@ -73,6 +73,8 @@ resilience4j:
     instances:
       myCourseServiceCircuitBreaker:
         base-config: default
+      myCourseServiceCircuitBreakerWC:
+        base-config: default
 #Set Logger 
 logging:
  level:
