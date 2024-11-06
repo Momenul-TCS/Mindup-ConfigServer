@@ -60,6 +60,4 @@ resilience4j:
         permitted-number-of-calls-in-half-open-state: 2
         failure-rate-threshold: 50
         wait-duration-in-open-state: 1000
-    instances:
-          myVideoServiceCircuitBreaker:
-            base-config: default
+    
