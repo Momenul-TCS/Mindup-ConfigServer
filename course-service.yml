@@ -76,4 +76,4 @@ resilience4j:
 #Set Logger 
 logging:
  level:
-   root: INFO
+   root: TRACE
