@@ -64,15 +64,23 @@ resilience4j:
   circuitbreaker:
     configs:
       default:
-        sliding-window-size: 10
-        permitted-number-of-calls-in-half-open-state: 2
-        failure-rate-threshold: 50
-        wait-duration-in-open-state: 1000
+        slidingWindowSize: 10
+        permittedNumberOfCallsInHalfOpenState: 2
+        failureRateThreshold: 50
+        waitDurationInOpenState: 1000ms
     instances:
       myCourseServiceCircuitBreaker:
         baseConfig: default
+        slidingWindowSize: 10
+        permittedNumberOfCallsInHalfOpenState: 5
+        failureRateThreshold: 50
+        waitDurationInOpenState: 1000ms
       myCourseServiceCircuitBreakerWC:
         baseConfig: default
+        slidingWindowSize: 10
+        permittedNumberOfCallsInHalfOpenState: 3
+        failureRateThreshold: 50
+        waitDurationInOpenState: 1000ms
 #Set Logger 
 logging:
  level:
