@@ -72,9 +72,9 @@ resilience4j:
         wait-duration-in-open-state: 1000
     instances:
       myCourseServiceCircuitBreaker:
-        base-config: default
+        baseConfig: default
       myCourseServiceCircuitBreakerWC:
-        base-config: default
+        baseConfig: default
 #Set Logger 
 logging:
  level:
